@@ -6,8 +6,12 @@ const config = {
     adapter: adapter({
       pages: "docs",
       assets: "docs",
-      fallback: null,
+      fallback: "index.html",
     }),
+    paths: {
+      base: "",
+    },
+    appDir: "internal",
     prerender: {
       default: false,
     },
