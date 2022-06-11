@@ -1,9 +1,5 @@
 .svelte-kit
 node_modules
 
-# ignoring files for the docs branch
-docs
-
-
 # Mac Junk
 .DS_Store
