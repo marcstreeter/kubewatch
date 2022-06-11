@@ -9,7 +9,7 @@ const config = {
       fallback: null,
     }),
     prerender: {
-      default: true,
+      default: false,
     },
   },
 };

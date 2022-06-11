@@ -1,4 +1,5 @@
-<script>
+<script context="module">
+  export const prerender = true;
   let count = 0;
   const click = () => count++;
 </script>
