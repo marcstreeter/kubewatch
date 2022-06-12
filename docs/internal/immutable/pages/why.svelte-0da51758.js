@@ -1,0 +1,1 @@
+import{S as r,i as o,s as i,t as c,h as l,g as m,E as a,d as u}from"../chunks/index-946ecebe.js";function d(s){let t;return{c(){t=c("Here I am, a test!")},l(e){t=l(e,"Here I am, a test!")},m(e,n){m(e,t,n)},p:a,i:a,o:a,d(e){e&&u(t)}}}class p extends r{constructor(t){super(),o(this,t,null,d,i,{})}}export{p as default};

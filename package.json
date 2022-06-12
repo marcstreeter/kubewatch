@@ -3,16 +3,24 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
+    "prebuild": "mv docs/CNAME CNAME-TMP 2>/dev/null",
     "build": "svelte-kit build",
+    "postbuild": "mv CNAME-TMP docs/CNAME 2>/dev/null",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
-    "prepare": "svelte-kit sync",
+    "prepare": "smui-theme compile docs/smui.css -i src/theme",
     "test": "playwright test",
     "lint": "prettier --check --plugin-search-dir=. . && eslint .",
     "format": "prettier --write --plugin-search-dir=. ."
   },
   "devDependencies": {
     "@playwright/test": "^1.22.2",
+    "@smui/button": "^6.0.0-beta.16",
+    "@smui/card": "^6.0.0-beta.16",
+    "@smui/drawer": "^6.0.0-beta.16",
+    "@smui/icon-button": "^6.0.0-beta.16",
+    "@smui/list": "^6.0.0-beta.16",
+    "@smui/top-app-bar": "^6.0.0-beta.16",
     "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "eslint": "^8.16.0",
@@ -20,7 +28,12 @@
     "eslint-plugin-svelte3": "^4.0.0",
     "prettier": "^2.6.2",
     "prettier-plugin-svelte": "^2.7.0",
-    "svelte": "^3.44.0"
+    "smui-theme": "^6.0.0-beta.16",
+    "svelte": "^3.44.0",
+    "svelte-preprocess": "^4.10.7"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "svelte-material-ui": "^6.0.0-beta.16"
+  }
 }
