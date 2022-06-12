@@ -45,7 +45,7 @@
             <Text>News</Text>
           </Item>
           <Item href="/why">
-            <Text>Why??</Text>
+            <Text>Why?</Text>
           </Item>
         </List>
       </Content>
