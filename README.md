@@ -1,1 +1,17 @@
 # kube.watch
+
+# dev
+
+Depends on the following secrets
+
+```
+SMS_TELEPHONE_NUMBER
+
+TWILIO_ACCOUNT_SID
+
+TWILIO_API_KEY
+
+TWILIO_API_SECRET
+
+TWILIO_TELEPHONE_NUMBER
+```
