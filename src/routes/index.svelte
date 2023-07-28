@@ -4,7 +4,7 @@
   const click = () => count++;
 </script>
 
-<h1>Welcome to KubeWatch Automated! Dalinda!</h1>
+<h1>Welcome to KubeWatch Automated!</h1>
 <p>
   This is just the beginning of a website built on
   <a href="https://kit.svelte.dev">svelte-kit</a>
