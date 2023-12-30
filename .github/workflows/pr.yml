@@ -1,4 +1,4 @@
-name: PR Made
+name: WEBSITE BUILD
 
 on:
   push:
@@ -7,6 +7,9 @@ on:
     paths:
       - src/**
       - static/**
+  pull_request:
+    branches:
+      - main
 
 jobs:
   textme:
@@ -21,7 +24,7 @@ jobs:
           message: "${{ github.event.pull_request.user.login }} pushed moar code"
         env:
           TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
-          TWILIO_API_KEY: ${{ secrets.TWILIO_API_KEY }}
+          TWILIO_API_KEY: ${{ secrets.TWILIO_API_SID }}
           TWILIO_API_SECRET: ${{ secrets.TWILIO_API_SECRET }}
 
   build:
