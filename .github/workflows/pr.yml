@@ -7,9 +7,6 @@ on:
     paths:
       - src/**
       - static/**
-  pull_request:
-    branches:
-      - main
 
 jobs:
   textme:
