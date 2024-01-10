@@ -47,6 +47,9 @@
           <Item href="/why">
             <Text>Why?</Text>
           </Item>
+          <Item href="/contact">
+            <Text>Contact</Text>
+          </Item>
         </List>
       </Content>
     </Drawer>
