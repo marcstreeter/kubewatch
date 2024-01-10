@@ -48,3 +48,5 @@ jobs:
         with:
           commit_message: Action build
           file_pattern: docs/**
+          branch: pages
+          create_branch: true
