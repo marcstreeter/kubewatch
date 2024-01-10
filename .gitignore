@@ -3,7 +3,3 @@ node_modules
 
 # Mac Junk
 .DS_Store
-
-# limiting docs files being tracked
-/docs/*
-!/docs/CNAME
