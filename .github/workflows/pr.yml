@@ -29,6 +29,8 @@ jobs:
     steps:
       - name: pulling down repo
         uses: actions/checkout@v3
+      - name: checking environment
+        uses: marcstreeter/github-actions/branch-delete@v2
       - name: establishing node
         uses: actions/setup-node@v3
         with:
