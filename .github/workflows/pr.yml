@@ -45,7 +45,7 @@ jobs:
       - name: build site
         run: npm run build
       - name: remove previous branch
-        uses: marcstreeter/github-actions/branch-delete@v4
+        uses: marcstreeter/github-actions/branch-delete@v5
         with:
           branch: pages
       - name: publish site
