@@ -29,8 +29,6 @@ jobs:
     steps:
       - name: pulling down repo
         uses: actions/checkout@v3
-      - name: checking environment
-        uses: marcstreeter/github-actions/branch-delete@v2
       - name: establishing node
         uses: actions/setup-node@v3
         with:
@@ -46,6 +44,10 @@ jobs:
             ${{ runner.os }}-node-
       - name: build site
         run: npm run build
+      - name: remove previous branch
+        uses: marcstreeter/github-actions/branch-delete@v3
+        with:
+          branch: pages
       - name: publish site
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
