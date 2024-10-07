@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
 export const ssr = false;
 </script>
-<p>Here I am, a test! But just a test</p>
+<p>Here I am, a test! But just a test. But I am really a test.</p>
 
 <style>
   p {
