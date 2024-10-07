@@ -9,20 +9,20 @@ on:
       - static/**
 
 jobs:
-  textme:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Sending Notification
-        uses: twilio-labs/actions-sms@v1
-        with:
-          fromPhoneNumber: ${{ secrets.TWILIO_TELEPHONE_NUMBER }}
-          toPhoneNumber: ${{ secrets.SMS_TELEPHONE_NUMBER }}
-          message: "${{ github.event.pull_request.user.login }} pushed moar code"
-        env:
-          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
-          TWILIO_API_KEY: ${{ secrets.TWILIO_API_SID }}
-          TWILIO_API_SECRET: ${{ secrets.TWILIO_API_SECRET }}
+  # textme:
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   steps:
+  #     - name: Sending Notification
+  #       uses: twilio-labs/actions-sms@v1
+  #       with:
+  #         fromPhoneNumber: ${{ secrets.TWILIO_TELEPHONE_NUMBER }}
+  #         toPhoneNumber: ${{ secrets.SMS_TELEPHONE_NUMBER }}
+  #         message: "${{ github.event.pull_request.user.login }} pushed moar code"
+  #       env:
+  #         TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+  #         TWILIO_API_KEY: ${{ secrets.TWILIO_API_SID }}
+  #         TWILIO_API_SECRET: ${{ secrets.TWILIO_API_SECRET }}
 
   build:
     runs-on: ubuntu-latest
